@@ -9,12 +9,12 @@
     <body>
         <header>
             <div class="logo">
-                <a href="index.html"><img id="smallLogo" src="images/Caroline Pham Logos-04 1.png" width="89px" height="76px"></a>
+                <a href="index.html"><img id="smallLogo" src="images/CarolinePham_Logos-small.png" width="89px" height="76px"></a>
             </div>
            <nav class="inline-block">
                <ul class="nav">
-                   <li><a href="index_skills.html">About</a></li>
-                   <li><a href="index_works.html">Work</a></li>
+                <li class="fade"><a href="index_skills.html">About</a></li>
+                <li class="fade"><a href="index_works.html">Work</a></li>
                </ul>
            </nav>
         </header>
@@ -52,7 +52,10 @@
                         </li>
                     </ul>
                         <h4>Want to know more about me? Click below for my resume.</h4>
-                        <button>Resume</button>
+                        <div class="cssChange">
+                        <a href="https://drive.google.com/file/d/18xyLHugTsKbnunEIHeR2cz7fulBNTW2Y/view?usp=sharing">
+                            <button id="buttonClick">Resume</button></a>
+                        </div>
                         <h4>Get In Touch with Me:</h4>
                         <div class="email">
                             <span class="iconify" data-icon="eva:email-outline"></span>
@@ -70,25 +73,29 @@
                     <span>Let's Connect:</span>
                
                     <ul>
-                     <li>
-                        <a href="#email">
-                        <span class="iconify" data-icon="eva:email-outline"></span>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="#Instagram">
-                        <span class="iconify" data-icon="carbon:logo-instagram"></span>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="#Linkedin">
-                        <span class="iconify" data-icon="jam:linkedin-square"></span>
-                        </a>
-                     </li>
+                        <li class="footerTab">
+                            <a href="mailto: carolinepham1234@gmail.com">
+                            <span class="iconify" data-icon="eva:email-outline"></span>
+                            </a>
+                         </li>
+                         <li class="footerTab">
+                            <a href="https://www.instagram.com/c_pham_in_phamily/">
+                            <span class="iconify" data-icon="carbon:logo-instagram"></span>
+                            </a>
+                         </li>
+                         <li class="footerTab">
+                            <a href="https://www.linkedin.com/in/caroline-pham-686b1313b/">
+                            <span class="iconify" data-icon="jam:linkedin-square"></span>
+                            </a>
+                         </li>
                     </ul>
                 </div>
         </footer>
+        <div class="preloader">
+            <img src="images/Preloader.gif">
+        </div>
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/index.js"></script>
 </html>

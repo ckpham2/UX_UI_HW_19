@@ -9,12 +9,12 @@
     <body>
         <header>
             <div class="logo">
-                <a href="index.html"><img class="logo" src="images/Caroline Pham Logos-04 1.png" href="index.html"></a>
+                <a href="index.html"><img class="logo" src="images/CarolinePham_Logos-small.png" href="index.html"></a>
             </div>
            <nav class="inline-block">
                <ul class="nav">
-                   <li><a href="index_skills.html">About</a></li>
-                   <li><a href="index_works.html">Work</a></li>
+                <li class="tab"><a href="index_skills.html">About</a></li>
+                <li class="tab"><a href="index_works.html">Work</a></li>
                </ul>
            </nav>
         </header>
@@ -29,7 +29,11 @@
                 <div class="info">
                     <h3>LivingRoom</h3>
                     <p class="description">People find it difficult to visualize how furniture would fit their space when shopping for home furnishings. To solve this problem, I created a furniture AR app wher users are able to visualize their room's design before committing to buying furniture.</p>
-                    <button>View Project</button>
+                    <div class="cssChange">
+                        <a href="#viewProject">
+                            <button id="buttonClick">View Project</button>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="gridContainer workcard2">
@@ -39,7 +43,11 @@
                 <div class="info">
                     <h3>Department of Energy Website Redesign</h3>
                     <p class="description">Department of Energy Website had too much information and the navigation was confusing. To help make the navigation easier for the user, I aimed to simplify the navigation and interface to make it more straightforward.</p>
-                    <button>View Project</button>
+                    <div class="cssChange">
+                        <a href="#viewProject">
+                            <button id="buttonClick">View Project</button>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="gridContainer">
@@ -49,7 +57,11 @@
                 <div class="info">
                     <h3>Patriots & Paws Website Redesign</h3>
                     <p class="description">Redesigned Patriots & Paws’ website in order to better convey the organization’s mission in a simple, visually appealing manner where users are able to easily understand, donate, and view the website through their desktops and mobile devices.</p>
-                    <button>View Project</button>
+                    <div class="cssChange">
+                        <a href="#viewProject">
+                            <button id="buttonClick">View Project</button>
+                        </a>
+                    </div>
                 </div>
             </div>
             </div>
@@ -64,25 +76,29 @@
                     <span>Let's Connect:</span>
                
                     <ul>
-                     <li>
-                        <a href="#email">
-                        <span class="iconify" data-icon="eva:email-outline"></span>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="#Instagram">
-                        <span class="iconify" data-icon="carbon:logo-instagram"></span>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="#Linkedin">
-                        <span class="iconify" data-icon="jam:linkedin-square"></span>
-                        </a>
-                     </li>
+                        <li class="footerTab">
+                            <a href="mailto: carolinepham1234@gmail.com">
+                            <span class="iconify" data-icon="eva:email-outline"></span>
+                            </a>
+                         </li>
+                         <li class="footerTab">
+                            <a href="https://www.instagram.com/c_pham_in_phamily/">
+                            <span class="iconify" data-icon="carbon:logo-instagram"></span>
+                            </a>
+                         </li>
+                         <li class="footerTab">
+                            <a href="https://www.linkedin.com/in/caroline-pham-686b1313b/">
+                            <span class="iconify" data-icon="jam:linkedin-square"></span>
+                            </a>
+                         </li>
                     </ul>
                 </div>
         </footer>
+        <div class="preloader">
+            <img src="images/Preloader.gif">
+        </div>
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/index.js"></script>
 </html>

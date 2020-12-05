@@ -8,11 +8,12 @@ header{
 body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Nunito', sans-serif;
-    width: 1152px;
+    
     border: 15px;
     padding: 50px;
     margin: 10px;
     height: 700px;
+    justify-content: center;
 }
 header{
     display: flex;
@@ -24,6 +25,10 @@ header{
 }
 .text {
     margin: 50px;
+}
+button:hover {
+    background-color: #A9CDCA;
+    color: #ffffff;
 }
 nav {
     height: 50px;
@@ -49,14 +54,29 @@ ul {
     padding: 14px 16px;
     text-decoration: none;
   }
+  li a:hover {
+      color: #A9CDCA;
+      text-decoration: underline;
+  }
 .nav{
     display: inline-block;
     vertical-align: top;
 }
 img {
-    background-image: url(/images/Caroline\ Pham\ Logos-02\ 1.png);
+    background-image: url(/images/Caroline_Pham_Logos-05.png);
     background-repeat: no-repeat;
     float: left;
+}
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 100000;
+    background-color: white;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .bio {
     height:592px;
@@ -105,6 +125,8 @@ footer ul li a{
 }
 .homeBio {
     text-align: left;
+    display: flex;
+
 }
 .description {
     margin-right: 50px;
@@ -125,9 +147,18 @@ button {
     font-size: 14px;
     text-align: center;
     color: #1D1F1E;
+    border: none;
     border-radius: 25px;
-    border-color: #D8E8E7;
     background-color: #D8E8E7;
+}
+.cssChange {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    border-radius: 25px;
+    background-color: #A9CDCA;
+    color: #1D1F1E;
+    box-shadow: 0px 4px 4px grey;
 }
 h1 {
     font-size: 64pt;
@@ -142,7 +173,9 @@ h2 {
 h3 {
     font-size: 28pt;
     font-weight: bold;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 h4 {
     font-size: 20pt;
@@ -182,6 +215,7 @@ span {
 .email {
     display: flex;
 }
+
 @media only screen and (max-width: 600) {
     .flexContainer {
         flex-direction: column;
@@ -209,3 +243,14 @@ span {
                              'info';
     }
 } 
+@keyframes bounce {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(720deg);
+    }
+  }
