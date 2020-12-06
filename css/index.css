@@ -8,12 +8,13 @@ header{
 body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Nunito', sans-serif;
-    
     border: 15px;
     padding: 50px;
-    margin: 10px;
-    height: 700px;
-    justify-content: center;
+    margin: 0;
+    width: 70%;
+    height: 70%;
+    margin-right: 100px;
+    margin-bottom: 20px;
 }
 header{
     display: flex;
@@ -51,15 +52,16 @@ ul {
     display: block;
     color: #1D1F1E;
     text-align: center;
+    font-size: 20pt;
     padding: 14px 16px;
     text-decoration: none;
   }
-  .fade {
+  .fadeTab {
       color: #A9CDCA !important;
       text-decoration: underline;
   }
   li a:hover {
-      color: #A9CDCA;
+      color: #4A807B;
       text-decoration: underline;
   }
 .nav{
@@ -68,6 +70,10 @@ ul {
 }
 img {
     background-image: url(/images/Caroline_Pham_Logos-05.png);
+    background-repeat: no-repeat;
+    float: left;
+}
+img .aboutMe {
     background-repeat: no-repeat;
     float: left;
 }
@@ -113,7 +119,7 @@ footer ul li a{
 .nav {
     display: inline-block;
     vertical-align: top;
-    width: 73%;
+    width: 100%;
     padding: 1%;
 }
 .paragraph {
@@ -124,12 +130,12 @@ footer ul li a{
     margin-inline-end: 0px;
     width: 500px;
 }
-.knowme {
+.knowMe {
     text-align: left;
+    line-height: auto;
 }
 .homeBio {
     text-align: left;
-    display: flex;
 
 }
 .description {
@@ -142,6 +148,7 @@ p {
     margin-right: 50px;
     margin-left: 50px;
     text-align: left;
+    line-height: auto;
 }
 button {
     display: block;
@@ -160,7 +167,7 @@ button {
     margin: 0 auto;
     width: 150px;
     border-radius: 25px;
-    background-color: #A9CDCA;
+    background-color: #4A807B;
     color: #1D1F1E;
     box-shadow: 0px 4px 4px grey;
 }
@@ -168,14 +175,15 @@ h1 {
     font-size: 64pt;
     font-weight: bold;
     text-align: center;
+    margin: 0;
 }
 h2 {
-    font-size: 56pt;
+    font-size: 50pt;
     font-weight: bold;
     text-align: center;
 }
 h3 {
-    font-size: 28pt;
+    font-size: 26pt;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -206,6 +214,8 @@ span {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-areas: 'info image';
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .workcard2 {
     grid-template-areas: 'image info';
@@ -220,7 +230,7 @@ span {
     display: flex;
 }
 
-@media only screen and (max-width: 600) {
+@media only screen and (min-width: 600) {
     .flexContainer {
         flex-direction: column;
         width: 100%;
@@ -238,7 +248,12 @@ span {
     .gridContainer {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-rows: auto 
+                            auto 
+                            auto 
+                            auto 
+                            auto 
+                            auto;
         grid-template-areas: 'image'
                              'info'
                              'image'
