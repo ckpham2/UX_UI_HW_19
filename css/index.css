@@ -56,9 +56,6 @@ ul {
     padding: 14px 16px;
     text-decoration: none;
   }
-  .fade {
-      color: #4A807B !important;
-  }
   li a:hover {
       color: #4A807B;
       text-decoration: underline;
